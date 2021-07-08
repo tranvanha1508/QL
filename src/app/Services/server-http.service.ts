@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { throwError } from 'rxjs/internal/observable/throwError';
 import { catchError, map, tap } from 'rxjs/operators';
+import { Student } from '../models/Student';
 @Injectable({
   providedIn: 'root'
 })
@@ -24,6 +25,18 @@ private REST_API_SERVER = 'http://localhost:3000';
     const url =`${this.REST_API_SERVER}/profile`;
     return this.httpClient
       .get<any>(url, this.httpOptions)
+      .pipe(catchError(this.handleError));
+  }
+  public getStudent(): Observable<any>{
+    const url =`${this.REST_API_SERVER}/student`;
+    return this.httpClient
+      .get<any>(url, this.httpOptions)
+      .pipe(catchError(this.handleError));
+  }
+  public addStudent(data: Student): Observable<any>{
+    const url =`${this.REST_API_SERVER}/student`;
+    return this.httpClient
+      .post<any>(url, data, this.httpOptions)
       .pipe(catchError(this.handleError));
   }
   public getComments(): Observable<any>{

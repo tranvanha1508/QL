@@ -14,25 +14,26 @@ public comments;
 public posts;
   constructor(
     private common: CommonService,
-    private serviceHttp: ServerHttpService
+    private serviceHttp: ServerHttpService,
+    
     ) {
     //this.age =common.age;
   }
   
   ngOnInit(): void {
-    this.serviceHttp.getProfile().subscribe((data=>{
-      console.log(data);
-      this.name=data.name;
-      this.age=data.age;
-    }));
-    this.serviceHttp.getComments().subscribe((data=>{
-      console.log('comments',data);
-      this.comments=data;
-    }));
-    this.serviceHttp.getPosts().subscribe((data=>{
-      console.log('posts',data);
-      this.posts=data;
-    }));
+    // this.serviceHttp.getProfile().subscribe((data=>{
+    //   console.log(data);
+    //   this.name=data.name;
+    //   this.age=data.age;
+    // }));
+    // this.serviceHttp.getComments().subscribe((data=>{
+    //   console.log('comments',data);
+    //   this.comments=data;
+    // }));
+    // this.serviceHttp.getPosts().subscribe((data=>{
+    //   console.log('posts',data);
+    //   this.posts=data;
+    // }));
 
   }
   public addPost() {

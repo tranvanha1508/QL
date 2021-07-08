@@ -1,4 +1,28 @@
 {
+  "student": [
+    {
+      "id": 1,
+      "code": "2321122012",
+      "gender": "male",
+      "firstName": "Hà",
+      "lastName": "Trần",
+      "dob": "1999/08/15",
+      "email": "tranvanha0815@gmail.com",
+      "phone": "123-456-789",
+      "picture": ""
+    },
+    {
+      "id": 2,
+      "code": "2331122012",
+      "gender": "male",
+      "firstName": "Hoàng",
+      "lastName": "Nguyễn",
+      "dob": "1999/09/16",
+      "email": "hoangnguyen@gmail.com",
+      "phone": "124-456-789",
+      "picture": ""
+    }
+  ],
   "posts": [
     {
       "id": 1,

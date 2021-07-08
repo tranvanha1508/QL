@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +22,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { StudentComponent } from './student/student.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { StudentFormComponent } from './student-form/student-form.component';
+
+
 
 @NgModule({
   declarations: [
@@ -31,6 +40,9 @@ import { MatBadgeModule } from '@angular/material/badge';
     BoldDirective,
     FormComponent,
     ReactiveformComponent,
+    StudentComponent,
+    DashboardComponent,
+    StudentFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +51,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    MatInputModule,
 
     MatSliderModule,
     MatToolbarModule,
@@ -47,6 +60,10 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatListModule,
     MatButtonModule,
     MatBadgeModule,
+    MatMenuModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
