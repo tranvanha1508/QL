@@ -1,0 +1,44 @@
+
+<h1>tran ha</h1>
+<h3>My project of {{name}}
+    <span class="overAge">{{ name | uppercase }}</span>   
+</h3>
+<h3 class="overAge" style="color: yellow;">your age is {{ age }}</h3>
+
+
+<span *ngIf="age < 18; then trueCondition; else falseCondition"></span>
+<br />
+<ng-template #trueCondition><span MyBold>
+    Bạn dưới 18 tuổi
+</span></ng-template>
+
+<br />
+<ng-template #falseCondition class = class="overAge">
+    Bạn bằng tuổi hoặc trên 18 tuổi, bạn quá già!
+</ng-template>
+<br />
+<!-- <span onclick="tangtuoi()"*ngIf="age > 18" class="overAge">Bạn trên 18 tuổi</span> -->
+<br /><br />
+<input [(ngModel)] = "name" />
+<br /><br />
+<button (click)="tangtuoi()"MyBold>Tăng tuổi</button>
+
+
+
+<br /><br />
+<!-- <span>{{vehicle | json }}</span> -->
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+Danh sách xe: <br />
+<div *ngFor="let vehicle of vehicle">
+    <li>{{ vehicle }}</li>
+</div>
+<br />
+<div>
+    <select>
+        <option *ngFor="let vehicle of vehicle">{{vehicle}}</option>
+    </select>
+</div>

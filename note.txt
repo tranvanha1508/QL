@@ -1,0 +1,48 @@
+build-in pipes availiable
+lowercase
+uppercase
+date
+currency
+json
+percent
+decimal
+slice |
+
+//Full list of Angular Event
+
+(click)="myFunction()"
+(dbclick)="myFunction()"
+
+(submit)="myFunction()"
+(blur)="myFunction()"
+
+//Service
+ng g service new-service
+5
+ng g module my-module
+6
+Test
+ng Test
+7
+Build
+--------------------------------------
+Directives : chỉ thị
+
+Component Directives : Thành phần
+
+Structure Directives : cấu trúc
+
+Attribute Directives : Thuộc tính
+////////
+ <!-- <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Go to Home</a>
+&nbsp;
+<a [routerLink]="['/form']" routerLinkActive="router-link-active">Go to Form</a>     
+&nbsp;
+<a [routerLink]="['/reactiveform']" routerLinkActive="router-link-active">Go to Reactiveform</a>     
+&nbsp;
+<a [routerLink]="['/about']" routerLinkActive="router-link-active">Go to About</a>     
+<router-outlet></router-outlet>
+ -->app.component.html
+//////////////////////
+chay server ảo
+json-server --watch db.json

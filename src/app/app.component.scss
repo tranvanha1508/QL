@@ -1,0 +1,26 @@
+.nav-height {
+    min-height: 50px !important;
+    height: 50px !important;
+}
+.content-move-right {
+    margin-left: 170px !important;
+    transition: ease 0.2s;
+}
+.content-move-left {
+    margin-left: 10px !important;
+    transition: ease 0.1s;
+}
+.active-link {
+    background: orangered;
+    color: white;
+}
+.mat-button:hover {
+    background: blue;
+    color: white;
+}
+.mat-badge {
+    position: relative;
+    top: -10px;
+    left: -7px;
+    
+}

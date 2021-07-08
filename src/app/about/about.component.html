@@ -1,0 +1,37 @@
+<p>about works!</p>
+<br />
+
+<br />Hello from about ! Bạn có <span class="postCss"> {{ posts?.length }} </span>tin nhắn 
+<br />
+<br />
+Số tin nhắn <span class="badge">{{ posts?.length }}</span>
+<h3 MyBold>your name is {{ name }}</h3>
+<h3 MyBold>your age is {{ age }}</h3>
+<br /><br />
+<!-- <button (click)="tangtuoi()">Tăng tuổi</button>
+<br>
+Comments: <br />
+<span>{{ comments | json}}</span>
+<br /><br />
+<span *ngIf="comments">{{ comments[0] | json}}</span>
+<br> -->
+Posts: <br />
+<!-- <span>{{ posts | json}}</span> -->
+<!-- <div *ngFor="let post of posts">
+<li>{{ post | json }}</li>
+</div> -->
+
+<table id="customers" style="border-collapse: collapse;">
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>author</th>
+      </tr>
+      <tr *ngFor="let post of posts">
+        <td>{{ post?.id }}</td>
+        <td>{{ post?.title }}</td>
+        <td>{{ post?.author }}</td>
+      </tr>
+</table>
+<br /><br />
+<button (click)="addPost()">Thêm post mới</button>
