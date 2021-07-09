@@ -20,7 +20,7 @@ private httpOptions = {
   };
 private REST_API_SERVER = 'http://localhost:3000';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
   public getProfile(): Observable<any>{
     const url =`${this.REST_API_SERVER}/profile`;
     return this.httpClient

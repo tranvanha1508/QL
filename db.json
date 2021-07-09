@@ -21,6 +21,17 @@
       "email": "hoangnguyen@gmail.com",
       "phone": "124-456-789",
       "picture": ""
+    },
+    {
+      "code": "",
+      "gender": "",
+      "firstName": "",
+      "lastName": "",
+      "dob": "",
+      "email": "",
+      "phone": "",
+      "picture": "",
+      "id": 3
     }
   ],
   "posts": [
@@ -33,71 +44,6 @@
       "title": "testing",
       "author": "author testing",
       "id": 2
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 3
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 4
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 5
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 6
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 7
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 8
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 9
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 10
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 11
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 12
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 13
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 14
-    },
-    {
-      "title": "testing",
-      "author": "author testing",
-      "id": 15
     },
     {
       "title": "testing",
@@ -115,11 +61,6 @@
       "id": 1,
       "body": "some comment",
       "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some comment cl",
-      "postId": 12
     }
   ],
   "profile": {

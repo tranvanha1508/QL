@@ -46,3 +46,8 @@ Attribute Directives : Thuộc tính
 //////////////////////
 chay server ảo
 json-server --watch db.json
+///////////////////////////
+git add .
+git commit -m "thêm"
+git remote add origin https://github.com/tranvanha1508/QL.githttps://github.com/tranvanha1508/QL.git
+git push -u origin master

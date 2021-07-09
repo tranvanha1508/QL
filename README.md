@@ -1,3 +1,10 @@
+Đây là project quản lý sinh viên
+chay server ảo
+json-server --watch db.json  truy cập vào http://localhost:3000/
+chạy trong cmd 
+npm start hoặc ng serve truy cập vào http://localhost:4200/
+
+
 # Student
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.

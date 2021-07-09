@@ -8,9 +8,10 @@ import { ServerHttpService } from '../Services/server-http.service';
 @Component({
   selector: 'app-student-form',
   templateUrl: './student-form.component.html',
-  styleUrls: ['./student-form.component.scss']
+  styleUrls: ['./student-form.component.scss'],
 })
 export class StudentFormComponent implements OnInit {
+  value='Clear me';
   public studentForm = new FormGroup({
     code: new FormControl(''),
     gender: new FormControl(''),
@@ -25,21 +26,26 @@ export class StudentFormComponent implements OnInit {
     private common: CommonService,
     private serviceHttp: ServerHttpService,
     private router: Router,
-  ) { }
+  ) {}
 
   ngOnInit(): void {
   }
   public onSubmit() {
-    console.log('onSubmit');
+    //console.log('onSubmit');
     const newStudent= {};
-    for (const controlName in this.studentForm.controls){
+    for (const controlName in this.studentForm.controls) {
       if(controlName) {
         newStudent[controlName] = this.studentForm.controls[controlName].value;
       }
     }
-    console.log(newStudent);
+    //console.log(newStudent);
+    this.serviceHttp.addStudent(newStudent as Student).subscribe((data) => {
+      console.log('Student adder',data);
+      this.router.navigate(['student']);
+    });
   //   console.log('name ='+this.studentForm.controls.name.value);
   //   console.log('age ='+this.studentForm.controls.age.value);
   // }
 
-  }}
+  }
+}
