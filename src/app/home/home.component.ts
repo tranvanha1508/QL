@@ -7,22 +7,22 @@ import { CommonService } from '../Services/common.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-public name = 'Ha';
-public age = 17;
-public vehicle = ['Toyota','Honda','Mẹc','Ford','yamaha'];
+  public name = 'Huy Nguyễn';
+  public age;
+  public vehicles = ['Toyota', 'Honda', 'Nissan', 'Ford', 'Mustang'];
+
   constructor(private common: CommonService) {
-    this.age =common.age;
+    // this.age = common.age;
   }
 
-  ngOnInit(): void {
-  }
-  public tangtuoi() {
-    this.common.age++;
-    this.age = this.common.age; 
-    // if(this.age===20){
-    //   this.name="Hahaha";
-    //this.vehicle.push(this.name + ': ' + this.age);
-    }
-  }
+  ngOnInit(): void {}
 
-
+  public tangTuoi() {
+    // this.common.age++;
+    // this.age = this.common.age;
+    // if (this.age === 20) {
+    //   this.name = 'Hahaha';
+    // }
+    // this.vehicles.push(this.name + ': ' + this.age);
+  }
+}

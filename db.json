@@ -1,5 +1,5 @@
 {
-  "student": [
+  "students": [
     {
       "id": 1,
       "code": "2321122012",
@@ -12,26 +12,70 @@
       "picture": ""
     },
     {
-      "id": 2,
       "code": "2331122012",
       "gender": "male",
       "firstName": "Hoàng",
-      "lastName": "Nguyễn",
+      "lastName": "Z",
       "dob": "1999/09/16",
       "email": "hoangnguyen@gmail.com",
       "phone": "124-456-789",
-      "picture": ""
+      "picture": "",
+      "id": 2
     },
     {
-      "code": "",
-      "gender": "",
-      "firstName": "",
-      "lastName": "",
-      "dob": "",
-      "email": "",
-      "phone": "",
-      "picture": "",
-      "id": 3
+      "code": "BSN-02180028",
+      "gender": "male",
+      "firstName": "Nils",
+      "lastName": "Mohammed",
+      "dob": "1998-08-04T15:40:47.849Z",
+      "email": "nils.mohammed@example.com",
+      "phone": "(798)-455-3422",
+      "picture": "https://randomuser.me/api/portraits/men/91.jpg",
+      "id": 4
+    },
+    {
+      "code": "DNI-29181230-W",
+      "gender": "female",
+      "firstName": "Juana",
+      "lastName": "Garcia",
+      "dob": "1965-10-26T20:26:48.203Z",
+      "email": "juana.garcia@example.com",
+      "phone": "949-462-538",
+      "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+      "id": 5
+    },
+    {
+      "code": "PPS-4442615T",
+      "gender": "male",
+      "firstName": "Rick",
+      "lastName": "Hansen",
+      "dob": "1990-03-20T08:08:14.110Z",
+      "email": "rick.hansen@example.com",
+      "phone": "021-644-7262",
+      "picture": "https://randomuser.me/api/portraits/men/89.jpg",
+      "id": 6
+    },
+    {
+      "code": "TFN-752438809",
+      "gender": "male",
+      "firstName": "Gary",
+      "lastName": "Ferguson",
+      "dob": "1965-08-09T18:09:42.962Z",
+      "email": "gary.ferguson@example.com",
+      "phone": "08-4628-3247",
+      "picture": "https://randomuser.me/api/portraits/men/37.jpg",
+      "id": 7
+    },
+    {
+      "code": "CPR-020446-3956",
+      "gender": "female",
+      "firstName": "Lærke",
+      "lastName": "Hansen",
+      "dob": "1946-04-02T16:34:01.279Z",
+      "email": "laerke.hansen@example.com",
+      "phone": "28085109",
+      "picture": "https://randomuser.me/api/portraits/women/27.jpg",
+      "id": 8
     }
   ],
   "posts": [

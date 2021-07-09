@@ -14,8 +14,21 @@ export class AppComponent {
   @ViewChild('sidenav') sidenav: MatSidenav;
   public isOpened = false;
   public totalStudents = 0;
-
   
+  constructor(
+    private common: CommonService,
+    private serverHttp: ServerHttpService
+  ) {}
+  ngOnInit(): void {
+    this.common.totalStudents$.subscribe((total) => {
+      this.totalStudents = total;
+    });
+    if (this.common.totalStudents === 0) {
+      this.serverHttp.getStudents().subscribe((data) => {
+        this.common.setTotalStudents(data.length);
+      });
+    }
+  }
 
   public openLeftSide() {
     this.isOpened = !this.isOpened;

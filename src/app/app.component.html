@@ -3,7 +3,7 @@
       <button mat-icon-button>
         <mat-icon (click)="openLeftSide()">menu</mat-icon> 
       </button>
-      <h1>Quản lý học sinh</h1>
+      <h1>Quản lý sinh viên</h1>
       <span class="menu-spacer" style="width: 100px;"></span>
       <div>
         <a
@@ -29,10 +29,16 @@
         </a> -->
         <a
           mat-button
-          [routerLink]="['/student']"
+          [routerLink]="['/students']"
           [routerLinkActive]="'active-link'"
         >
-          <mat-icon mat-list-icon>folder_shared</mat-icon> Student
+          <mat-icon mat-list-icon >folder_shared</mat-icon> 
+        <span 
+        *ngIf="totalStudents > 0"
+        matBadge="{{totalStudents}}" 
+        matBadgeColor="warn">
+        Student
+      </span>
         </a>
         <a
           mat-button
@@ -61,8 +67,8 @@
         <!-- <a mat-list-item [routerLink]="['/reactiveform']">
           <mat-icon mat-list-icon>folder_shared</mat-icon> Reactiveform
         </a> -->
-        <a mat-list-item [routerLink]="['/student']">
-          <mat-icon>folder_shared</mat-icon> Student
+        <a mat-list-item [routerLink]="['/students']">
+          <mat-icon >folder_shared</mat-icon> Student
         </a>
         <a mat-list-item [routerLink]="['/about']">
           <mat-icon>person</mat-icon> About

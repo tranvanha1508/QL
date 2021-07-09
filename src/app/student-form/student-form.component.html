@@ -1,55 +1,71 @@
 <div class="container">
     <h1>Nhập thêm sinh viên</h1>   
-    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="studentForm" >
             <mat-form-field class="form-header" require>
             <mat-label>"Mã sinh viên"</mat-label>
-            <br /><br />
-            <textarea matInput placeholder=""></textarea>
+            <textarea matInput placeholder="" formControlName="code" require></textarea>
             </mat-form-field>
-            <br /><br />
-            <mat-form-field class="form-header" appearance="fill">
-                <mat-label>Giới tính</mat-label>
-                <input matInput type="text" [(ngModel)]="value">
-                <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-                <mat-icon>close</mat-icon>
-                </button>
-            </mat-form-field>
-            <br /><br />
-            <mat-form-field class="form-header" appearance="fill">
+            <mat-form-field class="form-header" require>
+                <mat-label>"Giới tính"</mat-label>
+                
+                <textarea matInput placeholder="" formControlName="gender" require></textarea>
+                </mat-form-field>
+            
+            <mat-form-field class="form-header" require>
                 <mat-label>Tên</mat-label>
-                <input matInput placeholder="" value="firstName">
+                <input matInput placeholder=""  formControlName="firstName" >
             </mat-form-field>
-            <br /><br />
-            <mat-form-field class="form-header" appearance="fill">
+            
+            <mat-form-field class="form-header" require>
                 <mat-label>Họ</mat-label>
-                <input matInput placeholder="" value="lastName">
+                <input matInput placeholder="" formControlName="lastName" >
             </mat-form-field>
-            <br /><br />
-            <mat-form-field class="form-header" appearance="fill">
+            
+            <mat-form-field class="form-header" require>
                 <mat-label>Ngày Sinh</mat-label>
-                <input matInput placeholder="" value="dob">
+                <input matInput placeholder="" formControlName="dob"require >
             </mat-form-field>
-            <br /><br />
-            <mat-form-field class="form-header" appearance="fill">
+            
+            <mat-form-field class="form-header" require>
                 <mat-label>Email</mat-label>
-                <input matInput placeholder="" value="email">
+                <input matInput placeholder="" formControlName="email"require>
             </mat-form-field>
-            <br /><br />
-            <mat-form-field class="form-header" appearance="fill">
+            <mat-form-field class="form-header" >
                 <mat-label>Số điện thoại</mat-label>
-                <input matInput placeholder="" value="phone">
+                <input matInput placeholder="" formControlName="phone" require >
             </mat-form-field>
-            <br /><br />
-            <mat-form-field class="form-header" appearance="fill">
+            <mat-form-field class="form-header" >
                 <mat-label>Ảnh</mat-label>
-                <input matInput placeholder="" value="picture">
+                <input matInput placeholder="" formControlName="picture" require>
             </mat-form-field>
+            
         <br />
         <button 
         type="submit" 
         class="btn btn-success" 
-        [disabled]="!studentForm.valid">
-        Thêm
+        [disabled]="!studentForm.valid"
+        (click)="saveAndGotoList()"
+        >
+        Lưu và trở về danh sách
+        </button>
+        &nbsp;&nbsp;&nbsp;
+        <button 
+        type="submit" 
+        class="btn btn-success" 
+        [disabled]="!studentForm.valid"
+        (click)="save()">
+        Lưu <span *ngIf="id === 0">và nhập mới</span> 
     </button>
+    &nbsp;&nbsp;&nbsp;
+    <button 
+        type="submit" 
+        class="btn btn-success" 
+        [disabled]="!studentForm.valid"
+        (click)="randomStudent()"
+        *ngIf="id===0"
+        >
+        Lấy ngẫu nhiên một người
+        </button>
+        
     </form>
 </div>
